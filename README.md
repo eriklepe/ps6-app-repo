@@ -4,3 +4,5 @@ The data was found on Kaggle, a subsidary website of Google hosting a community 
 
 ## About the app:
 The app includes a plot that shows the cost of attending college of each U.S state each year from 2013-2021. The plot includes features filtering features such as year, type, length, etc. The app also a reference to look at the raw dataset of the plot and allows you to filter by selecting a range of years to look at the data.")
+
+Link to the app: https://erik-lepe.shinyapps.io/ps6-app/
