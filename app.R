@@ -1,6 +1,8 @@
 library(shiny)
 library(rsconnect)
 library(tidyverse)
+library(ggplot2)
+library(plotly)
 
 colleges <- read_delim("colleges.csv")
 
@@ -17,6 +19,11 @@ ui <- navbarPage("PS6 Colleges Data Analysis", # add theme
               p("The dataset contains 6 rows and 3548 columns. It also has no missing values and includes variables such as 
                 year, state, college type, length, expenses, cost."),
               p("Overall the dataset looks reliable and good for analysis!"),
+              h3("Questions to answer"),
+              p(" - Where, on average, are the most and least expensive places to study?"),
+              p(" - How much variation is there in the cost of tuition across the United States by state?"),
+              p(" - How do private vs. public university tuition vary (especially by state)?"),
+              p(" - How is the cost of undergraduate education related to poverty rates in specific states?"),
               h3("About the app:"),
               p("The app includes a plot that shows the cost of attending college of each U.S state each year from 
                 2013-2021. The plot includes features filtering features such as year, type, length, etc."),
@@ -29,23 +36,25 @@ ui <- navbarPage("PS6 Colleges Data Analysis", # add theme
     titlePanel("Cost Plot"),
     sidebarLayout(
       sidebarPanel(
-        p("Select a year and type of college to begin:"), 
+        p("Select a year, expenses, and type of college to begin:"), 
         
         selectInput("n",
                     "Year",
                     unique(colleges$Year)
                     
-                    
         ),
       fluidRow(
-        column(10,
+        column(12,
                uiOutput("checkboxCut")
         ),
-        column(10,
+        column(12,
+               uiOutput("expenseChoice")
+        ),
+        column(12,
                uiOutput("collegeLength")
           
         )),
-             radioButtons("color", "Choose color",
+             radioButtons("color", "Choose color:",
                           choices = c("skyblue", "lightgreen", "orangered",
                                                "magenta", "gold")),
       textOutput("filtersText")
@@ -63,9 +72,11 @@ ui <- navbarPage("PS6 Colleges Data Analysis", # add theme
     )
  ), 
  
- tabPanel("Data Table", "Information about table",
+ tabPanel("Data Tables", "",
           sidebarLayout(
             sidebarPanel(
+              radioButtons("dataChoice", "Dataset:",
+                           choices = c("College Costs", "Household Income")),
               sliderInput("range", "Select year range",
                           min = min(colleges$Year),
                           max = max(colleges$Year),
@@ -75,8 +86,28 @@ ui <- navbarPage("PS6 Colleges Data Analysis", # add theme
             mainPanel(
               dataTableOutput("dataTable")
             )
- )
- )
+ )),
+ tabPanel("Household Income Map", "Information about Map",
+          sidebarLayout(
+            sidebarPanel(
+              p("Select a year to see the average household income:"),
+              selectInput("mapYear",
+                          "Year",
+                          unique(hhIncome2013_21$year)
+                          
+              ),
+              
+            ),
+            mainPanel(
+              plotlyOutput("plotlyMap")
+            )
+          )
+ ),
+ tabPanel("Conclusion", 
+   fluidRow(
+     mainPanel(
+       p("Insert information about conclusion"))
+     )),
  
 )
 
@@ -91,6 +122,11 @@ server <- function(input, output) {
     )
   })
   
+  output$expenseChoice <- renderUI ({
+    checkboxGroupInput("expense", "Expenses:",
+                       choices = unique(colleges$Expense))
+  })
+  
   output$collegeLength <- renderUI({
     checkboxGroupInput("length", "Length of College:",
                        choices = unique(colleges$Length))
@@ -98,10 +134,10 @@ server <- function(input, output) {
   
   sample <- reactive ({
     joe <- colleges %>% 
-      filter(Type %in% input$list, Length %in% input$length ) 
+      filter(Type %in% input$list, Length %in% input$length, Expense %in% input$expense) 
     if(nrow(joe) > 1) 
       joe <- colleges %>% 
-        filter(Type %in% input$list,Year == input$n, Length %in% input$length)
+        filter(Type %in% input$list,Year == input$n, Length %in% input$length, Expense %in% input$expense)
     else
       joe
   })
@@ -116,9 +152,18 @@ server <- function(input, output) {
   
   ## DATA TAB
   output$dataTable <- renderDataTable({
-    colleges %>%
-      filter(Year >= input$range[1],
-             Year <= input$range[2])
+    if(input$dataChoice == 'Household Income') {
+      joe <- hhIncome2013_21
+      joe %>% 
+        filter(hhIncome2013_21$year >= input$range[1],
+               hhIncome2013_21$year <= input$range[2])
+     } else if(input$dataChoice == 'College Costs') {
+      joe <- colleges
+      joe %>%
+        filter(Year >= input$range[1],
+               Year <= input$range[2])
+     }
+    joe
   })
   
   output$filtersText <- renderText ({
@@ -137,6 +182,45 @@ server <- function(input, output) {
     paste("Currently Selected Range:", input$range[1],
           "-", input$range[2])
   })
+  
+  ## MAP TAB
+  mapData <- reactive({
+    joe <- hhIncome2013_21 %>% 
+      filter(hhIncome2013_21$year %in% input$mapYear) 
+    if(nrow(joe) > 1) 
+      joe <- hhIncome2013_21 %>% 
+        filter(hhIncome2013_21$year == input$mapYear)
+    else
+      joe
+  })
+    
+  
+  output$plotlyMap <- renderPlotly({
+    plot_ly(mapData(), 
+            dataSet <- mapData(),
+            dataSet$hover <- with(dataSet, paste(dataSet$state,
+                               '<br>', "Household Income", dataSet$avgHHIncome,
+                               '<br>' , "Poverty Rate", dataSet$povertyRate)),
+            
+            l <- list(color = toRGB("white"), width = 2),
+            # specify some map projection/options
+            graphics <- list(scope = 'usa'),
+            
+            map <- plot_geo(dataSet, locationmode = 'USA-states'),
+            map <- map %>% add_trace(
+              z = dataSet$avgHHIncome, text = dataSet$hover, locations = dataSet$abbrev,
+              color = dataSet$colorsID, colors = 'Purples'
+              ),
+            
+            map <- map %>% colorbar(title = "Thousands USD"),
+            
+            map <- map %>% layout(
+              title = '2013-2021 Household Income in each U.S State<br>(Hover for breakdown)'
+              , geo = graphics )
+    )
+    map
+  }) 
+  
   
 }
 
