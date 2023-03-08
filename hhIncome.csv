@@ -1,0 +1,451 @@
+abbrev,state,povertyRate,avgHHIncome
+AL,Alabama,16.3,42882
+AK,Alaska,10.8,70058
+AZ,Arizona,12.9,48504
+AR,Arkansas,16,40605
+CA,California,12.3,60185
+CO,Colorado,9.69,58942
+CT,Connecticut,10.1,67262
+DE,Delaware,11.5,58244
+FL,Florida,13.1,46021
+GA,Georgia,14.1,47765
+HI,Hawaii,10.9,67798
+ID,Idaho,10.8,46621
+IL,Illinois,12.1,56212
+IN,Indiana,12.1,47508
+IA,Iowa,11,52286
+KS,Kansas,11.6,50892
+KY,Kentucky,16.3,43307
+LA,Louisiana,19.5,44234
+ME,Maine,11.1,47095
+MD,Maryland,10.3,72482
+MA,Massachusetts,10.4,66794
+MI,Michigan,13,48200
+MN,Minnesota,9.30,60664
+MS,Mississippi,19.1,38191
+MO,Missouri,12.8,46905
+MT,Montana,12,46893
+NE,Nebraska,10.5,51502
+NV,Nevada,14,51250
+NH,New Hampshire,7.40,64064
+NJ,New Jersey,10.1,70224
+NM,New Mexico,17.6,44026
+NY,New York,14,57255
+NC,North Carolina,13.5,45946
+ND,North Dakota,10.9,56800
+OH,Ohio,13.3,48138
+OK,Oklahoma,15.4,45724
+OR,Oregon,12.1,50228
+PA,Pennsylvania,12,52005
+RI,Rhode Island,12.1,55015
+SC,South Carolina,14.5,44310
+SD,South Dakota,11.9,49200
+TN,Tennessee,13.6,44268
+TX,Texas,14.1,51714
+UT,Utah,8.69,59715
+VT,Vermont,10.1,52511
+VA,Virginia,10.3,62745
+WA,Washington,9.90,58431
+WV,West Virginia,16.8,41195
+WI,Wisconsin,10.8,51474
+WY,Wyoming,10.6,58424
+AL,Alabama,19.1,42917
+AK,Alaska,11.4,70898
+AZ,Arizona,18.1,50036
+AR,Arkansas,18.6,41335
+CA,California,16.3,61927
+CO,Colorado,12.1,61324
+CT,Connecticut,10.8,70007
+DE,Delaware,13,59853
+FL,Florida,16.6,47439
+GA,Georgia,18.3,49240
+HI,Hawaii,11.5,69549
+ID,Idaho,14.8,47572
+IL,Illinois,14.3,57458
+IN,Indiana,15.1,49384
+IA,Iowa,12.3,53816
+KS,Kansas,13.5,52392
+KY,Kentucky,19,42914
+LA,Louisiana,19.8,44680
+ME,Maine,14,49381
+MD,Maryland,10.4,73851
+MA,Massachusetts,11.6,69200
+MI,Michigan,16.1,49755
+MN,Minnesota,11.4,61473
+MS,Mississippi,21.8,39738
+MO,Missouri,15.5,48288
+MT,Montana,15.1,46608
+NE,Nebraska,12.3,52803
+NV,Nevada,15.4,51487
+NH,New Hampshire,9.19,66469
+NJ,New Jersey,11.1,71968
+NM,New Mexico,20.6,44905
+NY,New York,16,58771
+NC,North Carolina,17.1,46596
+ND,North Dakota,11.1,60227
+OH,Ohio,15.8,49349
+OK,Oklahoma,16.6,47524
+OR,Oregon,16.3,51088
+PA,Pennsylvania,13.6,53224
+RI,Rhode Island,14.8,54797
+SC,South Carolina,17.8,45337
+SD,South Dakota,14.1,51059
+TN,Tennessee,18.1,44357
+TX,Texas,17.1,53067
+UT,Utah,11.8,60943
+VT,Vermont,12,54153
+VA,Virginia,11.8,64923
+WA,Washington,13.1,61358
+WV,West Virginia,18.3,41030
+WI,Wisconsin,13.1,52632
+WY,Wyoming,11.1,58291
+AL,Alabama,18.5,44833
+AK,Alaska,10.4,73391
+AZ,Arizona,17.3,51473
+AR,Arkansas,18.6,42046
+CA,California,15.4,64483
+CO,Colorado,11.5,63945
+CT,Connecticut,10.6,71333
+DE,Delaware,12.6,61327
+FL,Florida,15.8,49416
+GA,Georgia,17.1,51225
+HI,Hawaii,10.6,73097
+ID,Idaho,14.6,48311
+IL,Illinois,13.6,59590
+IN,Indiana,14.4,50510
+IA,Iowa,12.1,54843
+KS,Kansas,12.9,53802
+KY,Kentucky,18.3,45178
+LA,Louisiana,19.5,45829
+ME,Maine,13.1,51419
+MD,Maryland,9.90,75784
+MA,Massachusetts,11.5,70659
+MI,Michigan,15.6,51063
+MN,Minnesota,10.1,63459
+MS,Mississippi,22.1,40630
+MO,Missouri,14.8,50200
+MT,Montana,14.4,49650
+NE,Nebraska,12.1,55073
+NV,Nevada,14.9,52544
+NH,New Hampshire,8.40,70003
+NJ,New Jersey,10.8,72337
+NM,New Mexico,19.8,45524
+NY,New York,15.5,60805
+NC,North Carolina,16.3,47884
+ND,North Dakota,10.6,61674
+OH,Ohio,14.8,51086
+OK,Oklahoma,16,48595
+OR,Oregon,15.1,54074
+PA,Pennsylvania,13.1,55683
+RI,Rhode Island,14.1,57265
+SC,South Carolina,16.8,47308
+SD,South Dakota,13.5,53263
+TN,Tennessee,16.6,47243
+TX,Texas,15.9,55668
+UT,Utah,11.1,62961
+VT,Vermont,10.4,56883
+VA,Virginia,11.1,66263
+WA,Washington,12.1,64080
+WV,West Virginia,18,41969
+WI,Wisconsin,12.1,55623
+WY,Wyoming,10.6,61213
+AL,Alabama,17.1,46309
+AK,Alaska,9.90,76144
+AZ,Arizona,16.3,53481
+AR,Arkansas,17.1,44406
+CA,California,14.4,67715
+CO,Colorado,11,65718
+CT,Connecticut,9.90,73380
+DE,Delaware,11.8,62112
+FL,Florida,14.8,50857
+GA,Georgia,16.1,53468
+HI,Hawaii,9.5,74659
+ID,Idaho,13.8,51647
+IL,Illinois,13,60977
+IN,Indiana,14,52289
+IA,Iowa,11.6,56354
+KS,Kansas,12.1,54828
+KY,Kentucky,18.1,46610
+LA,Louisiana,20.1,45374
+ME,Maine,12.3,52926
+MD,Maryland,9.69,78787
+MA,Massachusetts,10.5,75207
+MI,Michigan,14.9,52436
+MN,Minnesota,9.90,65583
+MS,Mississippi,21,41793
+MO,Missouri,14,51713
+MT,Montana,13.4,50265
+NE,Nebraska,11.3,56979
+NV,Nevada,14.1,55201
+NH,New Hampshire,7.59,70986
+NJ,New Jersey,10.4,76212
+NM,New Mexico,19.1,46844
+NY,New York,14.8,62700
+NC,North Carolina,15.4,50595
+ND,North Dakota,10.5,61898
+OH,Ohio,14.5,52357
+OK,Oklahoma,16.1,49204
+OR,Oregon,13.4,57379
+PA,Pennsylvania,12.9,56897
+RI,Rhode Island,13.3,60046
+SC,South Carolina,15.3,49587
+SD,South Dakota,12.9,54926
+TN,Tennessee,15.8,48506
+TX,Texas,15.6,56583
+UT,Utah,10.1,65931
+VT,Vermont,11.3,57661
+VA,Virginia,11,68127
+WA,Washington,11.3,67064
+WV,West Virginia,17.8,43175
+WI,Wisconsin,11.8,56808
+WY,Wyoming,10.9,61686
+AL,Alabama,16.8,48193
+AK,Alaska,11,74058
+AZ,Arizona,14.9,56508
+AR,Arkansas,16.3,45916
+CA,California,13.3,71785
+CO,Colorado,10.3,69113
+CT,Connecticut,9.69,74428
+DE,Delaware,13,64085
+FL,Florida,14.1,52582
+GA,Georgia,15.1,56117
+HI,Hawaii,9.5,77936
+ID,Idaho,12.6,52280
+IL,Illinois,12.5,63044
+IN,Indiana,13.3,54134
+IA,Iowa,10.8,58706
+KS,Kansas,11.9,56382
+KY,Kentucky,17.1,48332
+LA,Louisiana,19.6,46283
+ME,Maine,11.3,55980
+MD,Maryland,9.40,80711
+MA,Massachusetts,10.5,77385
+MI,Michigan,14.1,54840
+MN,Minnesota,9.5,68364
+MS,Mississippi,19.8,43595
+MO,Missouri,13.4,53506
+MT,Montana,12.6,53262
+NE,Nebraska,10.6,59913
+NV,Nevada,13.3,57932
+NH,New Hampshire,7.70,73638
+NJ,New Jersey,10,80106
+NM,New Mexico,19,47086
+NY,New York,14.1,64783
+NC,North Carolina,14.6,52797
+ND,North Dakota,10.1,62400
+OH,Ohio,13.9,54077
+OK,Oklahoma,15.8,50051
+OR,Oregon,13.1,60123
+PA,Pennsylvania,12.5,59165
+RI,Rhode Island,12.3,62923
+SC,South Carolina,15.4,50675
+SD,South Dakota,12.8,56871
+TN,Tennessee,15,51319
+TX,Texas,14.6,59195
+UT,Utah,9.69,68395
+VT,Vermont,10.8,58271
+VA,Virginia,10.6,71518
+WA,Washington,11,70942
+WV,West Virginia,18.5,43238
+WI,Wisconsin,11.3,59300
+WY,Wyoming,10.8,61279
+AL,Alabama,16.8,49881
+AK,Alaska,11.1,74912
+AZ,Arizona,14.1,59079
+AR,Arkansas,16.8,47094
+CA,California,12.8,75250
+CO,Colorado,9.69,71949
+CT,Connecticut,10.3,76366
+DE,Delaware,12.1,65467
+FL,Florida,13.6,55433
+GA,Georgia,14.5,58634
+HI,Hawaii,9,80527
+ID,Idaho,11.6,55524
+IL,Illinois,12.1,65063
+IN,Indiana,13,55725
+IA,Iowa,11.1,60071
+KS,Kansas,11.9,58150
+KY,Kentucky,16.6,50189
+LA,Louisiana,18.6,48021
+ME,Maine,11.6,55579
+MD,Maryland,9.09,83076
+MA,Massachusetts,10,79817
+MI,Michigan,14,56640
+MN,Minnesota,9.59,70295
+MS,Mississippi,19.8,44740
+MO,Missouri,13.1,54412
+MT,Montana,12.9,55248
+NE,Nebraska,11,59724
+NV,Nevada,13.1,58740
+NH,New Hampshire,7.59,75322
+NJ,New Jersey,9.5,81777
+NM,New Mexico,18.8,47405
+NY,New York,13.6,67648
+NC,North Carolina,14.1,53922
+ND,North Dakota,10.6,65250
+OH,Ohio,13.8,56155
+OK,Oklahoma,15.5,51914
+OR,Oregon,12.5,63168
+PA,Pennsylvania,12.1,60891
+RI,Rhode Island,12.8,63787
+SC,South Carolina,15.1,52449
+SD,South Dakota,12.9,57041
+TN,Tennessee,15.1,52366
+TX,Texas,14.9,60632
+UT,Utah,9.09,71381
+VT,Vermont,10.6,60917
+VA,Virginia,10.6,72600
+WA,Washington,10.3,74023
+WV,West Virginia,17.3,44038
+WI,Wisconsin,11.1,60779
+WY,Wyoming,10.6,62259
+AL,Alabama,15.6,51771
+AK,Alaska,10.1,77203
+AZ,Arizona,13.5,62027
+AR,Arkansas,16,49020
+CA,California,11.8,80423
+CO,Colorado,9.40,77104
+CT,Connecticut,9.90,78920
+DE,Delaware,11.1,70348
+FL,Florida,12.6,59198
+GA,Georgia,13.5,61950
+HI,Hawaii,9,83734
+ID,Idaho,11,60830
+IL,Illinois,11.4,69212
+IN,Indiana,11.9,57617
+IA,Iowa,11,61807
+KS,Kansas,11.3,62028
+KY,Kentucky,16,52256
+LA,Louisiana,18.8,51108
+ME,Maine,10.9,58824
+MD,Maryland,9.09,86644
+MA,Massachusetts,9.5,85700
+MI,Michigan,12.9,59522
+MN,Minnesota,8.90,74529
+MS,Mississippi,19.5,45928
+MO,Missouri,12.9,57375
+MT,Montana,12.6,57248
+NE,Nebraska,9.90,63290
+NV,Nevada,12.6,63268
+NH,New Hampshire,7.5,78571
+NJ,New Jersey,9.09,85786
+NM,New Mexico,17.5,52021
+NY,New York,13.1,72038
+NC,North Carolina,13.6,57388
+ND,North Dakota,10.5,67402
+OH,Ohio,13,58704
+OK,Oklahoma,15.1,54447
+OR,Oregon,11.5,66955
+PA,Pennsylvania,12,63455
+RI,Rhode Island,11.6,70383
+SC,South Carolina,13.9,56360
+SD,South Dakota,11.9,60414
+TN,Tennessee,13.8,56047
+TX,Texas,13.6,64044
+UT,Utah,8.80,75705
+VT,Vermont,10.1,63293
+VA,Virginia,9.90,76471
+WA,Washington,9.80,78674
+WV,West Virginia,16.1,48659
+WI,Wisconsin,10.4,64177
+WY,Wyoming,9.90,66152
+AL,Alabama,14.9,53958
+AK,Alaska,9.59,79961
+AZ,Arizona,12.8,64652
+AR,Arkansas,15.1,51146
+CA,California,11.5,83001
+CO,Colorado,9,77688
+CT,Connecticut,9.69,79723
+DE,Delaware,10.9,71335
+FL,Florida,12.4,61724
+GA,Georgia,14,62800
+HI,Hawaii,8.90,86878
+ID,Idaho,10.1,62603
+IL,Illinois,11,71243
+IN,Indiana,11.6,60794
+IA,Iowa,10.1,62362
+KS,Kansas,10.6,63214
+KY,Kentucky,14.9,54074
+LA,Louisiana,17.8,51730
+ME,Maine,10.6,59145
+MD,Maryland,9,88589
+MA,Massachusetts,9.40,87288
+MI,Michigan,12.6,61352
+MN,Minnesota,8.30,75489
+MS,Mississippi,18.6,47368
+MO,Missouri,12.1,58812
+MT,Montana,12.4,57730
+NE,Nebraska,9.19,64735
+NV,Nevada,12.5,64608
+NH,New Hampshire,7,81415
+NJ,New Jersey,9.40,87095
+NM,New Mexico,16.8,52285
+NY,New York,12.6,73354
+NC,North Carolina,12.9,59616
+ND,North Dakota,10.1,64289
+OH,Ohio,12.6,60360
+OK,Oklahoma,14.3,54512
+OR,Oregon,11,67832
+PA,Pennsylvania,10.9,64898
+RI,Rhode Island,10.6,73919
+SC,South Carolina,13.8,57216
+SD,South Dakota,11.6,61149
+TN,Tennessee,13.6,56962
+TX,Texas,13.4,66048
+UT,Utah,7.29,77785
+VT,Vermont,9.40,67717
+VA,Virginia,9.19,79154
+WA,Washington,9.5,80319
+WV,West Virginia,15.8,49202
+WI,Wisconsin,10,64901
+WY,Wyoming,9.19,67284
+AL,Alabama,16.3,53990
+AK,Alaska,10.8,78437
+AZ,Arizona,12.9,68967
+AR,Arkansas,16,52577
+CA,California,12.3,84831
+CO,Colorado,9.69,82228
+CT,Connecticut,10.1,83628
+DE,Delaware,11.5,71636
+FL,Florida,13.1,63054
+GA,Georgia,14.1,66507
+HI,Hawaii,10.9,85547
+ID,Idaho,10.8,66318
+IL,Illinois,12.1,72215
+IN,Indiana,12.1,62723
+IA,Iowa,11,65645
+KS,Kansas,11.6,64128
+KY,Kentucky,16.3,55532
+LA,Louisiana,19.5,52090
+ME,Maine,11.1,64823
+MD,Maryland,10.3,90129
+MA,Massachusetts,10.4,89577
+MI,Michigan,13,63444
+MN,Minnesota,9.30,77712
+MS,Mississippi,19.1,48871
+MO,Missouri,12.8,61815
+MT,Montana,12,63357
+NE,Nebraska,10.5,66949
+NV,Nevada,14,66194
+NH,New Hampshire,7.40,88268
+NJ,New Jersey,10.1,89227
+NM,New Mexico,17.6,54304
+NY,New York,14,74230
+NC,North Carolina,13.5,61997
+ND,North Dakota,10.9,67603
+OH,Ohio,13.3,62286
+OK,Oklahoma,15.4,55829
+OR,Oregon,12.1,71441
+PA,Pennsylvania,12,68931
+RI,Rhode Island,12.1,73324
+SC,South Carolina,14.5,59447
+SD,South Dakota,11.9,66843
+TN,Tennessee,13.6,59698
+TX,Texas,14.1,66959
+UT,Utah,8.69,79449
+VT,Vermont,10.1,72415
+VA,Virginia,10.3,80926
+WA,Washington,9.90,84155
+WV,West Virginia,16.8,51122
+WI,Wisconsin,10.8,67150
+WY,Wyoming,10.6,66508
