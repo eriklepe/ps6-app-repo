@@ -129,7 +129,7 @@ server <- function(input, output) {
     avgCost <- round(sum(getCost)/nrow(getCost), 4)
     if(is.na(avgCost))
       avgCost <- 0
-    paste("Average cost of attendance based on selected filters: $", 
+    paste("Average Cost of Attendance Based on Selected Filters: $", 
           avgCost)
   })
   
